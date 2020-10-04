@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/ImageViewer.css" />
+    <title>Image Viewer</title>
+</head>
+<body>
+    <div class="img-container">
+        <img src="./Images/apartment-apple-business-chair-245032.jpg" width="180" id="image1" onclick="viewImage('image1')" />
+        <img src="./Images/businessman-man-space-desk-7059.jpg" width="180" id="image2" onclick="viewImage('image2')" />
+        <img src="./Images/code-coding-computer-data-574077.jpg" width="180" id="image3" onclick="viewImage('image3')" />
+        <img src="./Images/laptop-remote-working-writing-typing-7114.jpg" width="180" id="image4" onclick="viewImage('image4')" />
+    </div>
+    <div class="popup-screen" id="popup" onclick="closeImage(event)">
+        <p>Ctrl+Click (To Close This Popup)</p>
+        <img src="" width="650" id="popupImage" />
+    </div>
+
+    <script src="JS/ImageViewer.js"></script>
+</body>
+</html>
